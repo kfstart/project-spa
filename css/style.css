@@ -268,4 +268,146 @@ body {
     max-width: 1140px;
   }
 }
+
+.main-nav {
+  position: fixed;
+  top: o;
+  width: 100%;
+  z-index: 9999;
+  background-color: #ffffff;
+  padding: 12px 0;
+}
+
+.main-nav .main-nav-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-nav .brand {
+  height: 50px;
+  display: inline-block;
+}
+
+.main-nav .brand img {
+  height: 100%;
+}
+
+.main-nav .mobile-hamburger, .main-nav .mobile-close {
+  font-size: 28px;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.main-nav .mobile-hamburger {
+  color: #1ba4ce;
+}
+
+.main-nav .mobile-close {
+  color: #ffffff;
+  text-align: right;
+  height: 50px;
+}
+
+.main-nav .open-menu-holder {
+  position: fixed;
+  background-color: #1ba4ce;
+  top: 0;
+  right: 0;
+  max-width: 480px;
+  width: 480px;
+  text-align: right;
+  padding: 12px 23px;
+  display: none;
+}
+
+.main-nav .open-menu-holder.open {
+  display: block;
+}
+
+.main-nav .open-menu-holder .menu {
+  list-style: none;
+}
+
+.main-nav .open-menu-holder .menu .menu-item {
+  font-size: 50px;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+.main-nav .open-menu-holder .menu .menu-item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media all and (min-width: 992px) {
+  .main-nav .main-nav-holder {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .main-nav .brand {
+    height: 80px;
+  }
+  .main-nav .mobile-hamburger, .main-nav .mobile-close {
+    display: none;
+  }
+  .main-nav .open-menu-holder {
+    display: block;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    max-width: 100%;
+    padding: 0;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .main-nav .open-menu-holder .menu {
+    background-color: #ffffff;
+  }
+  .main-nav .open-menu-holder .menu .menu-item {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: initial;
+  }
+  .main-nav .open-menu-holder .menu .menu-item a {
+    color: #473452;
+    font-weight: 700;
+  }
+}
+
+.main-header {
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.main-header .header-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 30%;
+}
+
+.main-header .header-flowers {
+  max-width: 8%;
+  position: absolute;
+  left: 0;
+  top: 35%;
+}
 /*# sourceMappingURL=style.css.map */
