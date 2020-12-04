@@ -34,22 +34,22 @@
             &:hover {
                 background-color: $button-color;
             }
+        }
 
-            .watch {
-                color: $secondary-color;
-                display: inline-block;
-                margin-left: 15px;
-                text-decoration: none;
+        .watch {
+            color: $secondary-color;
+            display: inline-block;
+            margin-left: 15px;
+            text-decoration: none;
 
-                i {
-                    height: 40px;
-                    width: 40px;
-                    text-align: center;
-                    line-height: 40px;
-                    border: 1px solid $secondary-color;
-                    border-radius: 50%;
-                    transition: all .3s;
-                }
+            i {
+                height: 40px;
+                width: 40px;
+                text-align: center;
+                line-height: 40px;
+                border: 1px solid $secondary-color;
+                border-radius: 50%;
+                transition: all .3s;
             }
         }
     }
